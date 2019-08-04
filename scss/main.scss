@@ -5,6 +5,10 @@
 	margin: 0;
 	padding: 0;
 }
+@keyframes menuAnimation{
+	from { border-color: #FED330;}
+	to { transform: scale(1.5);}
+}
 
 body{
 	font-family: "Roboto", sans-serif;
@@ -18,8 +22,16 @@ body{
 	margin: 0 auto;
 	padding: 14px 149px;
 	.header {
+		position:fixed;
+		width: 100%;
+		top:-85px;
+		transform: translate(0, 84px);
+		transition: all ease-in .5s;
+		padding-top: 14px;
+		z-index: 5;
+		background: #ffffff;
 		display: flex;
-		border-bottom: 2px solid #F5F5F5;
+		
 		.logo {
 			
 		}
@@ -32,12 +44,42 @@ body{
 				li {
 					margin-right: 91px;
 					a {
+						position: relative;
 						font-weight: bold;
 						font-size: 20px;
 						line-height: 23px;
 						text-transform: uppercase;
 						text-decoration: none;
 						color:#202020;
+						 &:before {
+							content: "";
+							display: block;
+							position: absolute;
+							left: 100%;
+							top: -50%;
+							width: 15px;
+							height: 15px;
+							border-right:2px solid;
+							border-top:2px solid;
+							border-color: transparent;
+							
+						 }
+						&:after {
+							content: "";
+							display: block;
+							position: absolute;
+							right: 100%;
+							bottom: -50%;
+							width: 15px;
+							height: 15px;
+							border-left:2px solid;
+							border-bottom:2px solid;
+							border-color: transparent;
+							
+						}
+						&:hover:before, &:hover:after {
+							animation: menuAnimation .4s 2 alternate forwards ;
+						}
 					}
 				}
 			}
@@ -135,8 +177,9 @@ body{
 	background: #FAFAFA;
 	height: 100vh;
 	margin-top: 25px;
+	border-top: 2px solid #F5F5F5;
 	.info_top {
-		margin-top: 126px;
+		margin-top: 115px;
 		margin-right: 64px;
 		.title_top {
 			margin-bottom: 28px;
@@ -151,6 +194,9 @@ body{
 			margin-top: 50px;
 			margin-left: 3px;
 		}
+	}
+	.picture_top {
+		padding-top: 13px;
 	}
 }
 
