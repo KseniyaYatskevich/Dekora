@@ -37,8 +37,8 @@ body {
 .container .header .logo .svg_first {
   stroke-dasharray: 140px;
   stroke-dashoffset: 140px;
-  -webkit-animation: svgFirstLetter 1 forwards;
-          animation: svgFirstLetter 1 forwards;
+  -webkit-animation: svgFirstLetter 1 6s forwards;
+          animation: svgFirstLetter 1 6s forwards;
 }
 
 .container .header .menu ul {
