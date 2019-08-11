@@ -153,6 +153,16 @@ body {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.btn:hover {
+  color: #FED330;
+  border: 1px solid #FED330;
+  background: #FFFFFF;
+}
+
+.btn:active {
+  background: #FFD120;
+}
+
 .items_caption {
   text-align: center;
   text-transform: uppercase;
@@ -183,6 +193,17 @@ body {
   border: none;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn_grid:hover {
+  background: #FFFFFF;
+  border: 1px solid #202020;
+  color: #202020;
+}
+
+.btn_grid:active {
+  background: #424242;
+  color: #FFFFFF;
 }
 
 .top {
