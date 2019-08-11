@@ -25,6 +25,7 @@ body{
 		transform: translate(0, 84px);
 		transition: all ease-in .5s;
 		padding-top: 14px;
+		padding-bottom: 14px;
 		z-index: 5;
 		background: #ffffff;
 		display: flex;
@@ -301,6 +302,7 @@ body{
 			position: relative;
 				span {
 					position: absolute;
+					z-index: 20;
 					width: 60px;
 					height: 25px;
 					top:15px;
@@ -313,6 +315,35 @@ body{
 					text-transform: uppercase;
 					color: #ffffff;
 				}
+			.product_picture {
+				position: relative;
+				width: 262.21px;
+				height: 282.38px;
+			}
+			.picture_1{
+				background: url(../images/product1.svg);
+			}
+			.picture_2{
+				background: url(../images/product2.svg);
+			}
+			.picture_3{
+				background: url(../images/product3.svg);
+			}
+			.picture_4{
+				background: url(../images/product4.svg);
+			}
+			.picture_5{
+				background: url(../images/product5.svg);
+			}
+			.picture_6{
+				background: url(../images/product6.svg);
+			}
+			.picture_7{
+				background: url(../images/product7.svg);
+			}
+			.picture_8{
+				background: url(../images/product8.svg);
+			}
 			.product_caption {
 				margin-top: 20px;
 				margin-bottom: 15px;
@@ -339,6 +370,7 @@ body{
 					color: #999999;
 					margin-right: 31px;
 				}
+				
 			}
 			.btn_product {
 				margin-top: 20px;
@@ -349,6 +381,16 @@ body{
 		
 	}
 }
+
+a[class^="product"]:hover .hover_bg{
+	position: absolute;
+	width: 262.21px;
+	height: 282.38px;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 4;
+	border: 1px solid #202020
+}
+
 .footer {
 	margin-top: 150px;
 	.title_footer {
