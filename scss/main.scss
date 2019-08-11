@@ -249,8 +249,106 @@ body{
 		margin-top: 77px;
 		.item {
 			margin-right: 31px;
+			text-decoration: none;
+			.picture_1 {
+				background: url(../images/lights.svg);
+			}
+			.picture_2 {
+				background: url(../images/flower_pot.svg);
+			}
+			.picture_3 {
+				background: url(../images/decorative_cabinet.svg);
+			}
+			.items_picture {
+				position: relative;
+				width: 356.25px;
+				height: 200.27px;
+			
+				.border_left {
+					&:before {
+						content: "";
+						z-index: 10;
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 30px;
+						height: 30px;
+						border-left:2px solid;
+						border-top:2px solid;
+						border-color: transparent;
+					}
+					&:after {
+						content: "";
+						z-index: 10;
+						display: block;
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 30px;
+						height: 30px;
+						border-left:2px solid;
+						border-bottom:2px solid;
+						border-color: transparent;
+					}
+				}
+				.border_right {
+					&:before {
+						content: "";
+						z-index: 10;
+						display: block;
+						position: absolute;
+						right: 0;
+						top: 0;
+						width: 30px;
+						height: 30px;
+						border-right:2px solid;
+						border-top:2px solid;
+						border-color:transparent;
+					}
+					&:after {
+						content: "";
+						z-index: 10;
+						display: block;
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						width: 30px;
+						height: 30px;
+						border-right:2px solid;
+						border-bottom:2px solid;
+						border-color: transparent;
+					}
+				}
+				
+			}
 		}
-	}
+		.item:hover .border_left:before {
+			border-color: #202020;
+			transform: translate(-20px,-20px);
+			transition: all .7s ease-in;
+		}
+		.item:hover .border_left:after{
+			border-color: #202020;
+			transform: translate(-20px,20px);
+			transition: all .7s ease-in;
+		}
+		.item:hover .border_right:before {
+			border-color: #202020;
+			transform: translate(20px,-20px);
+			transition: all .7s ease-in;
+		}
+		.item:hover .border_right:after{
+			border-color: #202020;
+			transform: translate(20px,20px);
+			transition: all .7s ease-in;
+		}
+		.item:hover .items_caption {
+			transform: translateY(30px);
+			transition: all .7s ease-in;
+		}
+		}
+	
 	.grid {
 		margin-top: 105px;
 		display: grid;
@@ -423,16 +521,21 @@ a[class^="product"]:hover .hover_bg{
 			padding-left: 20px;
 		}
 		textarea[name="message"]{
+			padding-top: 5px;
 			resize: none;
 		}
-		button {
+		input[type="text"]:focus, textarea[name="message"]:focus {
+			background: #FFFFFF;
+			border: 1px solid #202020;
+			box-sizing: border-box;
+		}
+		.btn_form {
 			margin: 0 auto;
-			background: #202020;
 			width: 200px;
 			height: 50px;
 			font-size: 20px;
 			line-height: 26px;
-			color: #FFFFFF;
+			
 		}
 		
 	}

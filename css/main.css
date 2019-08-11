@@ -299,6 +299,120 @@ body {
 
 .furniture .items .item {
   margin-right: 31px;
+  text-decoration: none;
+}
+
+.furniture .items .item .picture_1 {
+  background: url(../images/lights.svg);
+}
+
+.furniture .items .item .picture_2 {
+  background: url(../images/flower_pot.svg);
+}
+
+.furniture .items .item .picture_3 {
+  background: url(../images/decorative_cabinet.svg);
+}
+
+.furniture .items .item .items_picture {
+  position: relative;
+  width: 356.25px;
+  height: 200.27px;
+}
+
+.furniture .items .item .items_picture .border_left:before {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-color: transparent;
+}
+
+.furniture .items .item .items_picture .border_left:after {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-color: transparent;
+}
+
+.furniture .items .item .items_picture .border_right:before {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  border-color: transparent;
+}
+
+.furniture .items .item .items_picture .border_right:after {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: transparent;
+}
+
+.furniture .items .item:hover .border_left:before {
+  border-color: #202020;
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+.furniture .items .item:hover .border_left:after {
+  border-color: #202020;
+  -webkit-transform: translate(-20px, 20px);
+          transform: translate(-20px, 20px);
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+.furniture .items .item:hover .border_right:before {
+  border-color: #202020;
+  -webkit-transform: translate(20px, -20px);
+          transform: translate(20px, -20px);
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+.furniture .items .item:hover .border_right:after {
+  border-color: #202020;
+  -webkit-transform: translate(20px, 20px);
+          transform: translate(20px, 20px);
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+.furniture .items .item:hover .items_caption {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
 }
 
 .furniture .grid {
@@ -545,17 +659,23 @@ a[class^="product"]:hover .hover_bg {
 }
 
 .footer .footer_form textarea[name="message"] {
+  padding-top: 5px;
   resize: none;
 }
 
-.footer .footer_form button {
+.footer .footer_form input[type="text"]:focus, .footer .footer_form textarea[name="message"]:focus {
+  background: #FFFFFF;
+  border: 1px solid #202020;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer .footer_form .btn_form {
   margin: 0 auto;
-  background: #202020;
   width: 200px;
   height: 50px;
   font-size: 20px;
   line-height: 26px;
-  color: #FFFFFF;
 }
 
 .footer .footer_text {
