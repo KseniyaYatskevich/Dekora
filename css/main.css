@@ -314,6 +314,7 @@ body {
 }
 
 .content .shop .shop_grid {
+  background: #F5F5F5;
   margin-top: 105px;
   display: -ms-grid;
   display: grid;
