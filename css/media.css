@@ -240,6 +240,13 @@
         grid-template-columns: repeat(2, 300px);
     }
 
+    .footer .text {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -279,8 +286,8 @@
 
     .header .container .header_flex .icons {
         order:1;
-        position: absolute;
-        left: 241px;
+        transform: scale(.7);
+        align-items: center;
     }
 
     .header .container .header_flex .menu ul{
@@ -304,7 +311,9 @@
     }
 
     .top .top_flex .top_picture {
-        transform: scale(.7);
+        transform: scale(.5);
+        margin-top: -150px;
+        mb-50
     }
 
     .top .top_flex .top_info .top_btn {
@@ -410,25 +419,9 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
     
-    /* .header .header_flex .logo .mobile {
-        display: block;
-        transform: scale(1.3);
-        margin-top: 10px;
-    }
-
-    .header .header_flex .logo .desk {
-        display: none;
-    } */
-
-    .header .container .header_flex .menu .btn-mobile {
+       .header .container .header_flex .menu .btn-mobile {
         font-size: 27px;
              
-    }
-
-    .header .container .header_flex .icons {
-        transform: scale(.7);
-        position: absolute;
-        left: 123px;
     }
 
     .header .header_flex .menu ul li a {
@@ -549,12 +542,7 @@
         margin-top: 0;
     }
 
-    .footer .text {
-        font-size: 14px;
-        line-height: 21px;
-        text-align: left;
-        margin-bottom: 20px;
-    }
+ 
 
     .footer .footer_form .footer_grid {
         margin-top: 10px;

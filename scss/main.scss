@@ -266,7 +266,6 @@ body{
 			display: none;
 		}
 		.shop_grid {
-			background: #F5F5F5;
 			margin-top: 105px;
 			display: grid;
 			grid-gap: 30px;
@@ -286,6 +285,7 @@ body{
 				justify-content: flex-end;
 				align-items: center;
 				.shop_picture {
+					background: #F5F5F5;
 					margin: 0 auto;		
 				}
 				.shop_info_grid {

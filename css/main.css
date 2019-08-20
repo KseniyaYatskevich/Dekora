@@ -314,7 +314,6 @@ body {
 }
 
 .content .shop .shop_grid {
-  background: #F5F5F5;
   margin-top: 105px;
   display: -ms-grid;
   display: grid;
@@ -362,6 +361,7 @@ body {
 }
 
 .content .shop .shop_grid .items_grid .shop_picture {
+  background: #F5F5F5;
   margin: 0 auto;
 }
 
