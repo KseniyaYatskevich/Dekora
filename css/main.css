@@ -345,6 +345,7 @@ body {
 }
 
 .content .shop .shop_grid .items_grid {
+  background: #F5F5F5;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
