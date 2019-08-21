@@ -277,8 +277,7 @@ body{
 			.shop_grid_1 { grid-area:item_grid_1;}
 			.shop_grid_2 { grid-area:item_grid_2;}						
 			.shop_grid_3 { grid-area:item_grid_3;}
-			.items_grid {
-				background: #F5F5F5;
+			.items_grid {	
 				padding: 20px;
 				display: flex;
 				flex-wrap: wrap;
@@ -305,12 +304,14 @@ body{
 				.shop_picture {
 					transform: scale(2.4);
 					padding-left: 50px;
-												 
+					z-index: 1;
+																 
 				}
 				.shop_info_grid {
 					align-items: flex-end;
 					margin-bottom: -119px;
 					padding-right: 30px;
+					z-index: 5;
 					.shop_caption_grid {
 						width: 294px;
 					}
@@ -473,6 +474,7 @@ body{
 	width: 1440px;
 	margin: 0 auto;
 	padding: 14px 149px;
+	border: 1px solid #000000;
 }
 
 .title {
